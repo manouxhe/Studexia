@@ -6,16 +6,18 @@ type Props = {
 
 export default function ChatInput({ input, setInput, sendMessage }: Props) {
   return (
-    <div className="flex gap-3 mt-4">
+    <div className="mt-4 flex gap-3">
       <input
         value={input}
         onChange={(e) => setInput(e.target.value)}
-        placeholder="Pose ta question..."
-        className="flex-1 border rounded-full px-4 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-400"
+        onKeyDown={(e) => e.key === "Enter" && sendMessage()}
+        placeholder="Ex: Je cherche un stage en marketing"
+        className="flex-1 rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-800 outline-none ring-indigo-200 transition focus:ring-2"
       />
       <button
+        type="button"
         onClick={sendMessage}
-        className="bg-indigo-500 text-white px-5 py-2 rounded-full hover:bg-indigo-600 transition"
+        className="rounded-xl bg-indigo-600 px-5 py-3 text-sm font-semibold text-white transition hover:bg-indigo-700"
       >
         Envoyer
       </button>

@@ -8,9 +8,9 @@ export default function Navbar() {
   const pathname = usePathname();
 
   const navItems = [
-    { name: "Ressources", href: "/ressources" },
-    { name: "Logements", href: "/logements" },
-    { name: "Opportunités", href: "/opportunites" },
+    { name: "Ressources", href: "/Ressources" },
+    { name: "Logements", href: "/Logements" },
+    { name: "Opportunités", href: "/Opportunités" },
     { name: "Support", href: "/job" },
     { name: "FAQ", href: "/FAQ" },
   ];
@@ -51,18 +51,18 @@ export default function Navbar() {
         {/* Actions */}
         <div className="flex items-center gap-4">
           <Link
-            href="app/connexion"
+            href="/connexion"
             className="text-sm font-medium text-[#1D4ED8] hover:opacity-80 transition"
           >
             Connexion
           </Link>
 
           <Link
-            href="app/inscription"
+            href="/inscription"
             className="px-4 py-2 rounded-lg bg-[#1D4ED8] text-white text-sm font-medium 
             hover:bg-blue-700 active:scale-95 transition-all duration-200 shadow-sm"
           >
-            S'inscrire
+            S&apos;inscrire
           </Link>
         </div>
       </div>
