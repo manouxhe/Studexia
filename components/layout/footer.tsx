@@ -8,7 +8,7 @@ export default function Footer() {
         <div>
           <Logo />
           <p className="text-sm text-[#64748B] mt-4">
-            L'unique plateforme dédiée aux étudiants belges.
+            L&apos;unique plateforme dédiée aux étudiants belges.
           </p>
         </div>
 
