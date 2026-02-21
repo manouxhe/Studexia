@@ -11,6 +11,7 @@ export default function Navbar() {
     { name: "Ressources", href: "/ressources" },
     { name: "Logements", href: "/logements" },
     { name: "Opportunités", href: "/opportunites" },
+    { name: "Support", href: "/job" },
     { name: "FAQ", href: "/FAQ" },
   ];
 
